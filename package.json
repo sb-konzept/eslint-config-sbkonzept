@@ -1,0 +1,10 @@
+{
+  "name": "eslint-preset-sbkonzept",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Michael Albertz <michael@prio.one>",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "./index.js"
+  }
+}
