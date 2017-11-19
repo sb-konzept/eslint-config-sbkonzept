@@ -53,7 +53,7 @@ If you use yarn, run `cat node_modules/eslint-config-sbkonzept/package.json | jq
   {
     "scripts": {
       "lint": "eslint src",
-      "prettify": "prettier-eslint src --write"
+      "prettify": "prettier-eslint src/**/*.js --write"
     }
   }
   ```
