@@ -28,7 +28,7 @@ If you use yarn, run `cat node_modules/eslint-config-sbkonzept/package.json | jq
   Which produces and runs a command like:
 
   ```sh
-  yarn install --dev eslint-config-airbnb eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.# babel-eslint@^#.#.#
+  yarn add --dev eslint-config-airbnb eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.# babel-eslint@^#.#.#
   ```
 
 2. Add `"extends": "sbkonzept"` to your package.json under the key `eslintConfig`
@@ -44,7 +44,7 @@ If you use yarn, run `cat node_modules/eslint-config-sbkonzept/package.json | jq
 3. Install `prettier-eslint-cli`
 
   ```sh
-  yarn install --dev prettier-eslint-cli
+  yarn add --dev prettier-eslint-cli
   ```
 
 4. Add additional scripts to your package.json
