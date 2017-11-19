@@ -40,3 +40,16 @@ If you use yarn, run `cat node_modules/eslint-config-sbkonzept/package.json | jq
     }
   }
   ```
+
+3. Install `prettier-eslint-cli`
+
+4. Add additional scripts to your package.json
+
+  ```json
+  {
+    "scripts": {
+      "lint": "eslint src",
+      "prettify": "prettier-eslint src --write"
+    }
+  }
+  ```
