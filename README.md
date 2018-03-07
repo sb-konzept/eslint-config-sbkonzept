@@ -57,3 +57,34 @@ If you use yarn, run `cat node_modules/eslint-config-sbkonzept/package.json | jq
     }
   }
   ```
+
+  ## Git-Hooks
+
+  1. Install `husky` and `lint-staged`
+
+  ```sh
+  yarn add -D lint-staged husky
+  ```
+
+  2. Add `lint-staged` config to the package.json
+
+  ```json
+  {
+    "lint-staged": {
+      "*.js": [
+        "prettify",
+        "lint:eslint",
+        "git add"
+      ]
+    }
+  }
+  ```
+  3. Add a precommit script to the package.json
+
+  ```json
+  {
+    "scripts": {
+      "precommit": "lint-staged"
+    }
+  }
+  ```
