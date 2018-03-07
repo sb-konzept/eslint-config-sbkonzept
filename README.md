@@ -73,7 +73,7 @@ If you use yarn, run `cat node_modules/eslint-config-sbkonzept/package.json | jq
     "lint-staged": {
       "*.js": [
         "prettify",
-        "lint:eslint",
+        "lint",
         "git add"
       ]
     }
