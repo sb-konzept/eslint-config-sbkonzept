@@ -2,6 +2,16 @@ module.exports = {
   extends: 'airbnb',
   parser: 'babel-eslint',
   rules: {
+    'import/prefer-default-export': 'off',
+    'react/forbid-prop-types': [
+      'error',
+      {
+        forbid: [
+          'any',
+          'array'
+        ]
+      }
+    ],
     // only .jsx files may have JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
