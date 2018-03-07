@@ -2,6 +2,14 @@ module.exports = {
   extends: 'airbnb',
   parser: 'babel-eslint',
   rules: {
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['A'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['noHref', 'invalidHref', 'preferButton']
+      }
+    ],
     'import/prefer-default-export': 'off',
     'react/forbid-prop-types': [
       'error',
