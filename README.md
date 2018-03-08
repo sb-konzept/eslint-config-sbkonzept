@@ -2,6 +2,37 @@
 
 This package provides our .eslintrc as an extensible shared config.
 
+# Quick Start
+
+1. Run
+
+```sh
+yarn add -D sb-konzept/eslint-config-sbkonzept
+cat node_modules/eslint-config-sbkonzept/package.json | jq -M .peerDependencies | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add -D  prettier-eslint-cli lint-staged husky
+```
+
+2. Add to the package.json
+
+```json
+{
+  "scripts": {
+    "precommit": "lint-staged",
+    "lint": "eslint src",
+    "prettify": "prettier-eslint src/**/*.js --write"
+  },
+  "eslintConfig": {
+    "extends": "sbkonzept"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn prettify",
+      "yarn lint",
+      "git add"
+    ]
+  }
+}
+```
+
 ## Usage
 
 We export three ESLint configurations for your usage.
