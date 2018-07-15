@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sbkonzept",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "author": "Michael Albertz <michael@prio.one>",
   "license": "MIT",
