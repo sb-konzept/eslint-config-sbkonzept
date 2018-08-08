@@ -17,16 +17,21 @@ cat node_modules/eslint-config-sbkonzept/package.json | jq -M .peerDependencies 
 {
   "scripts": {
     "precommit": "lint-staged",
-    "lint": "eslint src",
-    "prettify": "prettier-eslint src/**/*.js --write"
+    "lint:eslint": "eslint",
+    "format:prettier": "prettier-eslint --write",
+    "format:src": "yarn format:prettier 'src/**/*.js'"
   },
   "eslintConfig": {
     "extends": "sbkonzept"
   },
   "lint-staged": {
     "*.js": [
-      "yarn prettify",
-      "yarn lint",
+      "yarn format:prettier",
+      "yarn lint:eslint",
+      "git add"
+    ],
+    "*.json": [
+      "yarn format:prettier",
       "git add"
     ]
   }
