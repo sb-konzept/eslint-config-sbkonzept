@@ -2,7 +2,7 @@
   "name": "eslint-config-sbkonzept",
   "version": "1.2.1",
   "main": "index.js",
-  "author": "Michael Albertz <michael@prio.one>",
+  "author": "Michael Albertz <m.albertz@sb-konzept.de>",
   "license": "MIT",
   "eslintConfig": {
     "extends": "./index.js"
