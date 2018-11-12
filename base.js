@@ -65,6 +65,7 @@ module.exports = {
         ],
         optionalDependencies: false
       }
-    ]
+    ],
+    'operator-linebreak': ['error', 'before', { overrides: { '=': 'ignore' } }]
   }
 }
