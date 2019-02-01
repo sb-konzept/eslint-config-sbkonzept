@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+
 import {
   useCallback, useEffect, useRef, useState
 } from 'react'
@@ -79,7 +81,8 @@ export default function useChat (chatId) {
       message.creationTime.toMillis()
     )
 
-    const lastCreationTime = lastMessage?.creationTime
+    const lastCreationTime =
+      lastMessage?.creationTime
       || firebase.firestore.Timestamp.fromDate(new Date())
 
     const listener = firebase

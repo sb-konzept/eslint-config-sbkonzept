@@ -3,7 +3,7 @@
  * ResultChat
  *
  */
-/* eslint-disable import/no-unresolved, react/prop-types */
+/* eslint-disable import/no-unresolved */
 
 import React, { Component } from 'react'
 
@@ -17,21 +17,23 @@ class ResultChat extends Component {
   scrollerRef = React.createRef();
 
   componentDidMount () {
+    const { onScrollTop } = this.props
     if (
       this.scrollerRef.current.scrollHeight
       <= this.scrollerRef.current.clientHeight
     ) {
       // eslint-disable-next-line no-unused-expressions
-      this.props.onScrollTop?.()
+      onScrollTop?.()
     }
   }
 
   handleScroll = (event) => {
+    const { onScrollTop } = this.props
     const top = event.target.scrollTop === 0
 
     if (top) {
       // eslint-disable-next-line no-unused-expressions
-      this.props.onScrollTop?.()
+      onScrollTop?.()
     }
   };
 

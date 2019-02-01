@@ -22,6 +22,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': false,
     // only .jsx files may have JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-    'react/jsx-filename-extension': ['error', { extensions: ['.js'] }]
+    'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
+    'react/prop-types': false
   }
 }
