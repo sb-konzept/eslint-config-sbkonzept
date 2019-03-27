@@ -131,7 +131,7 @@ export default function useChat (chatId) {
       subscribeMessages()
       return () => listeners.current.forEach(listener => listener())
     },
-    [chatId]
+    [chatId, subscribeMessages, subscribeNewMessages]
   )
 
   return {
