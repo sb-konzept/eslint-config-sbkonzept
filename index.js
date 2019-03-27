@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['react-hooks'],
   extends: [
     './base',
     'eslint-config-airbnb/rules/react',
@@ -23,6 +24,8 @@ module.exports = {
     // only .jsx files may have JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
-    'react/prop-types': false
+    'react/prop-types': false,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 }
