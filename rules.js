@@ -86,6 +86,17 @@ module.exports = {
     'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
     'react/prop-types': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-sort-props': [
+      'warn',
+      {
+        reservedFirst: true,
+        callbacksLast: true,
+        shorthandFirst: true
+      }
+    ],
+    'sort-imports': 'off',
+    'import/order': 'off',
+    'simple-import-sort/sort': 'warn'
   }
 }

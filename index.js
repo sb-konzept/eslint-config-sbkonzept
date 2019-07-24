@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['react-hooks'],
+  plugins: ['react-hooks', 'simple-import-sort'],
   extends: [
     './base',
     'eslint-config-airbnb/rules/react',
