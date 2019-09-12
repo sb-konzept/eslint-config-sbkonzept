@@ -115,6 +115,7 @@ module.exports = {
         shorthandFirst: true
       }
     ],
+    'react/jsx-props-no-spreading': 'off',
     'sort-imports': 'off',
     'import/order': 'off',
     'simple-import-sort/sort': 'warn'
